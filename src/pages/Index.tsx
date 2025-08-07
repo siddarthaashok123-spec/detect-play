@@ -94,9 +94,9 @@ const Index = () => {
 
       {/* Main Content */}
       <main className="container mx-auto px-6 py-8">
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-5 gap-8">
           {/* Left Column - Input Controls */}
-          <div className="space-y-6">
+          <div className="xl:col-span-2 space-y-6">
             {/* Video Input */}
             <Tabs defaultValue="upload" className="w-full">
               <TabsList className="grid w-full grid-cols-2 bg-muted">
@@ -137,7 +137,7 @@ const Index = () => {
           </div>
 
           {/* Right Column - Output */}
-          <div className="space-y-6">
+          <div className="xl:col-span-3 space-y-6">
             {/* Original Video Preview */}
             {selectedVideo && (
               <VideoPlayer
